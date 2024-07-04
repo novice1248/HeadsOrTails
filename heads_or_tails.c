@@ -7,6 +7,11 @@ const char* coin_toss() {
 }
 
 int main() {
+    char name[100];
+    printf("Who are you?\n> ");
+    scanf("%99s", name);
+    printf("Hello, %s!\n", name);
+
     srand(time(0));
     printf("Tossing a coin...\n");
     int heads_count = 0;
